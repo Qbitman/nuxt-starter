@@ -1,0 +1,19 @@
+{
+    "login": {
+        "label": "Log in",
+        "title": "Sign in to OpenQC",
+        "google": "Continue with Google",
+        "github": "Continue with Github",
+        "or": "or",
+        "overlay": {
+            "title": "Unlock the Quantum Realm",
+            "details": "Journey into the Future of Computing!"
+        },
+        "noAccount": "Don't have an account?"
+    },
+    "signup": {
+        "label": "Sign up",
+        "title": "Sign up to OpenQC",
+        "haveAccount": "Have an account?"
+    }
+}

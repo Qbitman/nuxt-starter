@@ -1,0 +1,24 @@
+// Plugin for conversion of 'px' values to 'rem'
+@use '../../node_modules/sass-rem' as rem;
+
+// Standard color variables that can be used globally.
+$white: #FFFFFF;
+$dark: #1F1F1F;
+$gray: #928285;  
+
+// Generate mixins for media queries.
+// `@include respond-below-('x)` where x is 'small', 'medium', or 'large'.
+$breakpoints: (
+    'small': 576px,
+    'medium': 768px,
+    'large': 1200px,
+    'extra-large': 1560px,
+) !default;
+
+@mixin respond-below($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
